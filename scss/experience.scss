@@ -1,0 +1,232 @@
+/*Zeroing styles*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+nav, footer, header, aside {display: block;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+ input, button, textarea {font-family: inherit;}
+
+ input::-ms-clear {display: none;}
+ button {cursor: pointer;}
+ button::-moz-focus-inner {padding: 0; border: 0;}
+ a, a:visited {text-decoration: none;}
+ ul li {list-style: none;}
+//  img {vertical-align: top;}
+
+ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+ body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ /*Main Container*/
+.main-container {
+    background: url("../img/Color_Fill_1.png") no-repeat;
+    background-color: #ffffff;
+    width: 1278px;
+    margin: 10px auto;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/*Header*/
+.header {
+    display: flex;
+}
+
+/*Main section titles*/
+.main-sections-titles {
+    margin: 145px 0 0 93px;
+}
+.main-sections-titles-name {
+    color: #111111;
+    font-family: Montserrat;
+    font-size: 90px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 100px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main-sections-titles-surname {
+    color: #111111;
+    font-family: Montserrat;
+    font-size: 90px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 100px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main-sections-titles-profession {
+    margin-top: 25px;
+    color: #363636;
+    font-family: Montserrat;
+    font-size: 33px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.17px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3.33px;
+}
+.photo {
+    // padding: 0 160px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.my-photo {
+    max-width: 432px;
+    max-height: 553px;
+    margin: 10px 0 0 110px;
+}
+
+/*Main sections*/ 
+
+
+/*Basic information contacts*/ 
+.basic-information-contacts {
+    display: flex;
+    background-color: #111111;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Poppins;
+}
+.basic-information-contacts-list {
+    margin: 30px 45px;
+}
+.basic-information-contacts-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.17px;
+    text-align: left;
+}
+.basic-information-contacts-link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.17px;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.basic-information-contacts-link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    background-color: #707070;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+.basic-information-contacts-link:hover {
+    color:#707070
+}
+.basic-information-contacts-link:hover:after {
+    opacity: 1;
+}
+
+/*Basic information experience*/ 
+.basic-information-experience {
+    margin: 76px 98px 60px 92px;
+}
+.basic-information-title {
+    color: #111111;
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29.17px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 3.75px;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+.basic-information-company {
+    margin-bottom: 50px;
+}
+.basic-information-position {
+    color: #252525;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 33.33px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.basic-information-company-block {
+    color: #707070;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 33.33px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.basic-information-experience-list {
+    margin-left: 20px;
+}
+.basic-information-experience-item {
+    list-style-type: square;
+    padding-left: 2px;
+    padding-top: 35px;
+    color: #252525;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 33.33px;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
